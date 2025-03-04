@@ -1,0 +1,111 @@
+import * as Survey from "survey-react";
+import "survey-react/survey.css";
+
+const surveyJSON = {
+  title: "Dating Profile Questionnaire",
+  showProgressBar: "top",
+  pages: [
+    {
+      name: "page1",
+      elements: [
+        {
+          type: "radiogroup",
+          name: "perfect_weekend",
+          title: "What’s your idea of a perfect weekend?",
+          choices: [
+            { value: "nature_hiking", text: "Exploring nature and hiking" },
+            { value: "relaxing_home", text: "Relaxing at home with a good book or movie" },
+            { value: "friends_partying", text: "Going out with friends and partying" },
+            { value: "museums_events", text: "Visiting museums, galleries, or attending events" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "communication_style",
+          title: "How do you prefer to communicate with your partner?",
+          choices: [
+            { value: "text_messages", text: "Through text messages" },
+            { value: "phone_calls", text: "Phone calls" },
+            { value: "video_chats", text: "Video chats" },
+            { value: "in_person", text: "In person, face-to-face" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "ideal_vacation",
+          title: "Which best describes your ideal vacation?",
+          choices: [
+            { value: "beach_resort", text: "A beach resort with a laid-back vibe" },
+            { value: "adventurous_trip", text: "An adventurous trip like hiking or mountain climbing" },
+            { value: "cultural_tour", text: "A cultural city tour with museums and architecture" },
+            { value: "road_trip", text: "A spontaneous road trip with no set plans" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "comfort_food",
+          title: "What is your go-to comfort food?",
+          choices: [
+            { value: "pizza", text: "Pizza" },
+            { value: "ice_cream", text: "Ice cream" },
+            { value: "sushi", text: "Sushi" },
+            { value: "home_cooked", text: "A home-cooked meal" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "evening_preference",
+          title: "How do you prefer to spend your evenings?",
+          choices: [
+            { value: "watching_tv", text: "Watching TV or movies" },
+            { value: "cooking_dinner", text: "Cooking and enjoying dinner with loved ones" },
+            { value: "socializing", text: "Going to social events or hanging out with friends" },
+            { value: "hobbies_projects", text: "Getting creative with hobbies or personal projects" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "spending_time_with_partner",
+          title: "What’s your favorite way to spend time together with a partner?",
+          choices: [
+            { value: "romantic_walks", text: "Going on romantic walks or hikes" },
+            { value: "cozy_night_in", text: "Staying in, cooking together, and enjoying a cozy night" },
+            { value: "attending_events", text: "Attending events, concerts, or sports games" },
+            { value: "traveling_exploring", text: "Traveling and exploring new places" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "pets_preference",
+          title: "How do you feel about pets?",
+          choices: [
+            { value: "love_pets", text: "I love animals and have pets" },
+            { value: "like_pets", text: "I like animals but don’t have pets" },
+            { value: "indifferent_pets", text: "I’m indifferent, but I can tolerate them" },
+            { value: "no_pets", text: "I’m not a fan of pets" }
+          ]
+        },
+        {
+          type: "radiogroup",
+          name: "conflict_resolution",
+          title: "How do you handle conflicts in a relationship?",
+          choices: [
+            { value: "talk_it_out", text: "I prefer to talk it out calmly and resolve it quickly" },
+            { value: "space_first", text: "I tend to need some space before I’m ready to talk" },
+            { value: "get_upset", text: "I might get upset, but eventually, I like to work things out" },
+            { value": "avoid_conflict", "text": "I try to avoid conflict as much as possible" }
+          ]
+        },
+        {
+          type: "radiogroup",
+... (36 lines left)
+Collapse
+message.txt
+6 KB
+Forwarded
+1. What’s your idea of a perfect weekend?
+A) Exploring nature and hiking
+B) Relaxing at home with a good book or movie
+C) Going out with friends and partying
+D) Visiting museums, galleries, or attending events
+2. How do you prefer to communicate with your partner?
